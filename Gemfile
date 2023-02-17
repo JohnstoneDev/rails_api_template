@@ -3,6 +3,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
+# Image Upload Gems 
+
+gem 'carrierwave'
+gem 'cloudinary'
+
 # serializer for response objects 
 gem 'active_model_serializers'
 
