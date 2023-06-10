@@ -8,6 +8,13 @@ ruby "3.1.2"
 gem 'carrierwave'
 gem 'cloudinary'
 
+# Role based Authorization libraries
+gem 'rolify'
+gem 'cancancan'
+
+# JWT Authentication
+gem 'jwt'
+
 # serializer for response objects 
 gem 'active_model_serializers'
 
