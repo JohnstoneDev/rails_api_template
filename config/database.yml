@@ -22,6 +22,6 @@ test:
 
 production:
   <<: *default
-  adapter: postgres 
-  url: <% ENV['DATABASE_URL'] %>
+  adapter: postgresql #=> 'postgres' for Ralway, 'postgresql' for Render
+  url: <%= ENV['DATABASE_URL'] %>
   # database: db/production.sqlite3
