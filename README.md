@@ -1,12 +1,13 @@
 # <strong> Rails API Template Repository </strong>
 
-<h2> A template repository for rails API projects, configured with deployment options for <a href='railway.app'>railway.app</a>. </h2>
+A template repository for rails API projects, configured with deployment options for [Railway](https://railway.app) & [Render](https://render.com)
 
 ## Gems
 
 * `active_model_serializer` to format the json responses.
 * `pg` production gem for provisioning a postgres database.
 * `foreman` optional gem that will allow deployment of a react app as a client side for the API.
+* `phonelib` optional gem for phone number validation. Phonelib docs [Here]('https://github.com/daddyz/phonelib).
 
 ## Configuration
 
@@ -14,6 +15,7 @@
 * In the `database.yml` file, sets the url for the database to use an env variable and the postgres adapter.
 * In the `production.rb` and `development.rb` files, sets the application hosts
 * Adds a `Procfile` with web starting options.
+* Initialized phonelib, ready to use in [phonelib.rb](config/initializers/phonelib.rb)
 
 
 ## Render Deployment Configuration
